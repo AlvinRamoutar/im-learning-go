@@ -1,0 +1,41 @@
+### GET
+
+GET http://localhost:8080/api/books HTTP/1.1
+content-type: application/json
+
+### CREATE
+
+POST http://localhost:8080/api/books HTTP/1.1
+content-type: application/json
+
+{
+  "isbn": "9781944145408",
+  "title": "Age of Empire",
+  "author": {
+    "firstname": "Michael J.",
+    "lastname": "Sullivan"
+  }
+}
+
+
+### UPDATE
+
+PUT http://localhost:8080/api/books/4 HTTP/1.1
+content-type: application/json
+
+{
+  "isbn": "9781944145408",
+  "title": "Age of Empyre",
+  "author": {
+    "firstname": "Michael J.",
+    "lastname": "Sullivan"
+  }
+}
+
+
+### DELETE
+
+DELETE http://localhost:8080/api/books/5 HTTP/1.1
+content-type: application/json
+
+###
